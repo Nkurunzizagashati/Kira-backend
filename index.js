@@ -17,7 +17,11 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded());
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://kiraserivices-client.onrender.com"],
+  })
+);
 app.use(morgan("dev"));
 const port = process.env.PORT || 5000;
 // CONNECTING TO THE DATABASE
