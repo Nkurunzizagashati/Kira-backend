@@ -1,6 +1,6 @@
 import express from "express";
 import { verifyToken } from "../verifyToken.js";
-import { loginUser, registerUser, updateUser } from "../controllers/User.js";
+import { loginUser, registerUser } from "../controllers/User.js";
 
 // ======== USER REGISTRATION ===========================
 
