@@ -19,7 +19,10 @@ app.use(express.urlencoded());
 
 app.use(
   cors({
-    origin: ["https://kiraserivices-client.onrender.com"],
+    origin: [
+      "https://kiraserivices-client.onrender.com",
+      "http://localhost:3000",
+    ],
   })
 );
 app.use(morgan("dev"));
