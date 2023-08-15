@@ -19,7 +19,7 @@ app.use(express.urlencoded());
 
 app.use(
   cors({
-    origin: ["https://kiraserivices-client.vercel.app"],
+    origin: ["https://kiraserivices-client.onrender.com"],
   })
 );
 app.use(morgan("dev"));
